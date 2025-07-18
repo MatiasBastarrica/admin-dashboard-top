@@ -40,73 +40,6 @@ nav a {
   color: inherit;
 }
 
-/* ### PLACEHOLDERS ### */
-
-.dashboard-icon {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
-}
-
-.nav-icon {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
-}
-
-.search-bar__icon {
-  width: 15px;
-  height: 15px;
-  background-color: #010001;
-}
-
-.bell-icon {
-  width: 15px;
-  height: 15px;
-  background-color: #010001;
-}
-
-.profile-icon-small {
-  width: 28px;
-  height: 28px;
-  background-color: #fbcc14;
-  border-radius: 200px;
-}
-
-.profile-icon-big {
-  width: 55px;
-  height: 55px;
-  background-color: #fbcc14;
-  border-radius: 200px;
-}
-
-.star-icon {
-  width: 20px;
-  height: 20px;
-  background-color: gray;
-}
-
-.eye-icon {
-  width: 20px;
-  height: 20px;
-  background-color: gray;
-}
-
-.branch-icon {
-  width: 20px;
-  height: 20px;
-  background-color: gray;
-}
-
-.trend-icon {
-  width: 38px;
-  height: 38px;
-  background-color: gray;
-  border-radius: 200px;
-}
-
 /* ### UTILITIES ### */
 
 .grid-spacer-inline {
@@ -122,11 +55,15 @@ nav a {
   gap: var(--grid-block-gap, 1rem);
 }
 
+.icon-mirrored svg {
+  transform: scaleX(-1);
+}
+
 /* ### LAYOUT ### */
 
 body {
   min-height: 100vh;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* ### DASHBOARD ### */
@@ -154,12 +91,24 @@ body {
   align-content: start;
 }
 
+.dashboard-icon svg {
+  width: 50px;
+  height: 50px;
+  fill: white;
+}
+
 .sidebar h1 {
   font-size: 1.5rem;
 }
 
 .sidebar ul {
   --grid-block-gap: 1rem;
+}
+
+.nav-icon svg {
+  width: 25px;
+  height: 25px;
+  fill: white;
 }
 
 /* ## HEADER ## */
@@ -176,6 +125,20 @@ body {
   box-shadow: 3px 4px 3px #7a7a7a44;
 }
 
+.header svg {
+  width: 24px;
+  height: 24px;
+  fill: black;
+}
+
+.profile-icon-small svg {
+  width: 40px;
+  height: 40px;
+  background-color: #fbcc14;
+  border-radius: 200px;
+  fill: white;
+}
+
 /* # SEARCH BAR # */
 
 .header__search-bar {
@@ -187,10 +150,13 @@ body {
 
 .header__input input {
   width: 100%;
-  height: 25px;
+  /* height: 25px; */
   border: none;
   border-radius: 200px;
   background-color: #e3e9f0;
+  padding-inline-start: 1rem;
+  padding-block: 0.3rem;
+  font-weight: normal;
 }
 
 /* # PROFILE ACTIONS # */
@@ -205,6 +171,14 @@ body {
 }
 
 /* # PROFILE ID # */
+
+.profile-icon-big svg {
+  width: 60px;
+  height: 60px;
+  background-color: #fbcc14;
+  border-radius: 200px;
+  fill: white;
+}
 
 .header__profile-id {
   display: grid;
@@ -298,6 +272,12 @@ body {
   align-self: end;
 }
 
+.card-icons svg {
+  width: 25px;
+  height: 25px;
+  fill: black;
+}
+
 /* # ANNOUNCEMENTS CONTAINER # */
 
 .main-content__announcements-container {
@@ -343,6 +323,29 @@ body {
   grid-area: trending;
   display: grid;
   grid-auto-rows: min-content 1fr;
+}
+
+.trend-icon svg {
+  width: 38px;
+  height: 38px;
+  border-radius: 200px;
+  fill: white;
+}
+
+.trending-grid .trend:nth-of-type(1) svg {
+  background-color: rgb(61, 189, 147);
+}
+
+.trending-grid .trend:nth-of-type(2) svg {
+  background-color: rgb(251, 204, 20);
+}
+
+.trending-grid .trend:nth-of-type(3) svg {
+  background-color: rgb(47, 51, 164);
+}
+
+.trending-grid .trend:nth-of-type(4) svg {
+  background-color: rgb(158, 43, 152);
 }
 
 .trending-title {
