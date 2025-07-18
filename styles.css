@@ -161,3 +161,17 @@ body {
 .sidebar ul {
   --grid-block-gap: 1rem;
 }
+
+/* ## HEADER ## */
+
+.header {
+  grid-area: header;
+  background-color: #fefeff;
+  padding: 1rem 3.5rem 1rem 2.5rem;
+  display: grid;
+  grid-template-columns: 60% auto;
+  gap: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  box-shadow: 3px 4px 3px #7a7a7a44;
+}
