@@ -128,3 +128,16 @@ body {
   min-height: 100vh;
   font-family: sans-serif;
 }
+
+/* ### DASHBOARD ### */
+
+.dashboard {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main-content"
+    "sidebar main-content"
+    "sidebar main-content";
+}
