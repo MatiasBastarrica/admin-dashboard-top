@@ -111,12 +111,16 @@ body {
   fill: white;
 }
 
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
 /* ## HEADER ## */
 
 .header {
   grid-area: header;
   background-color: #fefeff;
-  padding: 1rem 3.5rem 1rem 2.5rem;
+  padding: 1rem 5.5rem 1rem 4rem;
   display: grid;
   grid-template-columns: 60% auto;
   gap: 1.5rem;
@@ -168,6 +172,7 @@ body {
   justify-content: end;
   align-items: center;
   padding-inline-end: 1.5rem;
+  padding-inline-end: 3.5rem;
 }
 
 /* # PROFILE ID # */
@@ -196,7 +201,7 @@ body {
 .header__btns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
   align-items: center;
   justify-content: end;
 }
@@ -208,6 +213,10 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 200px;
+}
+
+.header-btn:hover {
+  text-decoration: underline;
 }
 
 /* ## MAIN CONTENT ## */
