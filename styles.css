@@ -121,3 +121,10 @@ nav a {
   display: grid;
   gap: var(--grid-block-gap, 1rem);
 }
+
+/* ### LAYOUT ### */
+
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+}
