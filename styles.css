@@ -89,6 +89,7 @@ body {
   color: #fff;
   font-weight: bold;
   align-content: start;
+  font-size: 1.235rem;
 }
 
 .dashboard-icon svg {
@@ -122,7 +123,7 @@ body {
   background-color: #fefeff;
   padding: 1rem 5.5rem 1rem 4rem;
   display: grid;
-  grid-template-columns: 60% auto;
+  grid-template-columns: 65% auto;
   gap: 1.5rem;
   font-weight: bold;
   position: relative;
@@ -175,6 +176,10 @@ body {
   padding-inline-end: 3.5rem;
 }
 
+.profile-name-small {
+  font-size: 1.125rem;
+}
+
 /* # PROFILE ID # */
 
 .profile-icon-big svg {
@@ -193,7 +198,11 @@ body {
 }
 
 .greeting {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.profile-name-big {
+  font-size: 1.475rem;
 }
 
 /* # BUTTONS # */
@@ -245,6 +254,7 @@ body {
 .projects-title {
   font-weight: bold;
   margin-bottom: 1rem;
+  font-size: 1.275rem;
 }
 
 .projects-grid {
@@ -266,11 +276,11 @@ body {
 
 .card-title {
   font-weight: bold;
+  font-size: 1.185rem;
 }
 
 .card-description {
   color: #353535;
-  max-width: 40ch;
 }
 
 .card-icons {
@@ -298,6 +308,7 @@ body {
 .announcements-title {
   font-weight: bold;
   margin-bottom: 1rem;
+  font-size: 1.275rem;
 }
 
 .announcements-grid {
@@ -320,6 +331,7 @@ body {
 
 .announcement-title {
   font-weight: bold;
+  font-size: 0.925rem;
 }
 
 .announcement-description {
@@ -360,6 +372,7 @@ body {
 .trending-title {
   font-weight: bold;
   margin-bottom: 1rem;
+  font-size: 1.275rem;
 }
 
 .trending-grid {
@@ -376,4 +389,12 @@ body {
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 1rem;
+}
+
+.trend-user {
+  font-weight: bold;
+}
+
+.trend-description {
+  color: #353535b4;
 }
