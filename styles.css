@@ -235,3 +235,18 @@ body {
   cursor: pointer;
   border-radius: 200px;
 }
+
+/* ## MAIN CONTENT ## */
+
+.main-content {
+  grid-area: main-content;
+  background-color: #e3e9f0;
+  padding: 2rem 2.5rem 3rem 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
+  grid-auto-rows: 1fr 1fr;
+}
