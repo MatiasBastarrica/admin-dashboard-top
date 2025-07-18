@@ -250,3 +250,50 @@ body {
     "projects trending";
   grid-auto-rows: 1fr 1fr;
 }
+
+/* # PROJECTS CONTAINER # */
+
+.main-content__projects-container {
+  grid-area: projects;
+  display: grid;
+  grid-auto-rows: min-content 1fr;
+}
+
+.projects-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.project-card {
+  height: 260px;
+  background-color: #fff;
+  border-inline-start: 8px solid #fbcc14;
+  border-radius: 0.4rem;
+  box-shadow: 3px 4px 3px #7a7a7a44;
+  padding: 2rem 1.5rem;
+  display: grid;
+  grid-auto-rows: min-content min-content 1fr;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-description {
+  color: #353535;
+  max-width: 40ch;
+}
+
+.card-icons {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, auto);
+  justify-content: end;
+  align-self: end;
+}
