@@ -141,3 +141,23 @@ body {
     "sidebar main-content"
     "sidebar main-content";
 }
+
+/* ## SIDEBAR ## */
+
+.sidebar {
+  --grid-block-gap: 3.5rem;
+  padding: 1.125rem;
+  grid-area: sidebar;
+  background-color: #1993d5;
+  color: #fff;
+  font-weight: bold;
+  align-content: start;
+}
+
+.sidebar h1 {
+  font-size: 1.5rem;
+}
+
+.sidebar ul {
+  --grid-block-gap: 1rem;
+}
