@@ -203,3 +203,16 @@ body {
   align-items: center;
   padding-inline-end: 1.5rem;
 }
+
+/* # PROFILE ID # */
+
+.header__profile-id {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.greeting {
+  font-size: 0.8rem;
+}
