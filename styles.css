@@ -216,3 +216,22 @@ body {
 .greeting {
   font-size: 0.8rem;
 }
+
+/* # BUTTONS # */
+
+.header__btns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: end;
+}
+
+.header-btn {
+  background-color: #1993d5;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 200px;
+}
