@@ -106,3 +106,18 @@ nav a {
   background-color: gray;
   border-radius: 200px;
 }
+
+/* ### UTILITIES ### */
+
+.grid-spacer-inline {
+  display: grid;
+  gap: var(--grid-inline-gap, 1rem);
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.grid-spacer-block {
+  display: grid;
+  gap: var(--grid-block-gap, 1rem);
+}
